@@ -1,0 +1,93 @@
+.map-container {
+  min-height: 90vh;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .boat {
+    width: 6rem;
+    height: 6rem;
+    z-index: 999;
+    position: relative;
+    perspective: 2000px;
+  }
+
+  svg {
+    margin: auto;
+    z-index: 5;
+    position: relative;
+    padding-bottom: 4rem;
+    transform: scale(1.25);
+  }
+
+  .compass {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 5rem;
+  }
+
+  .waves-top {
+    position: absolute;
+    width: 10rem;
+    top: 2rem;
+    right: 1rem;
+  }
+  .whale {
+    position: absolute;
+    width: 5rem;
+    top: 2rem;
+    left: 1rem;
+  }
+  .waves-bottom {
+    position: absolute;
+    width: 10rem;
+    bottom: 2rem;
+    left: 1rem;
+  }
+}
+
+@media screen and (min-width: $app-tablet) {
+  .map-container {
+    svg {
+      transform: scale(2);
+    }
+  }
+
+  .map-container .boat {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (min-width: $app-desktop) {
+  .map-container {
+    svg {
+      transform: scale(2.5);
+    }
+  }
+
+  .map-container .boat {
+    transform: scale(1.5);
+  }
+
+  .map-container .whale {
+    transform: scale(2);
+    left: 6rem;
+    top: 4rem;
+  }
+
+  .map-container .waves-top {
+    transform: scale(2);
+    top: 4rem;
+    right: 4rem;
+  }
+  .map-container .waves-bottom {
+    transform: scale(2);
+    bottom: 4rem;
+    left: 3rem;
+  }
+}

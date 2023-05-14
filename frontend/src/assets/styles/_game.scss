@@ -1,0 +1,16 @@
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+
+    .cardsGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        max-width: 80%;
+        width: 100%;
+        margin: 10px;
+    }
+}

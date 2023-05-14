@@ -1,0 +1,50 @@
+.error404Div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .skullImg {
+    width: 40vw;
+    margin-top: 10vh;
+
+    @media screen and (min-width: $app-tablet) {
+      width: 20vh;
+    }
+  }
+
+  h2 {
+    margin: 2vh;
+  }
+
+  .buttonAndBottleDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin-top: 10vh;
+
+    .rumBottleImg {
+      height: 18vh;
+      width: auto;
+      position: absolute;
+      right: -1vw;
+      bottom: -3vh;
+    }
+  }
+
+  @media screen and (min-width: $app-desktop) {
+    .buttonAndBottleDiv {
+      margin-top: 10vh;
+    .rumBottleImg {
+      position: absolute;
+      height: 23vh;
+      left: 50vw;
+      top: 3vh;
+      padding-bottom: 5vh;
+    }
+  }
+  }
+}

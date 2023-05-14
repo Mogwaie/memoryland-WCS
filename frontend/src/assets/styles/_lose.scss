@@ -1,0 +1,26 @@
+.lose-container-status {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  h1 {
+    padding-top: 40px;
+    color: Red;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    width: 250px;
+  }
+
+  @media screen and (min-width: $app-tablet) {
+    img {
+      max-width: 250px;
+    }
+  }
+}

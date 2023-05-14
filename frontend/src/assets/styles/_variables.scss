@@ -1,0 +1,150 @@
+/* Website Font */
+$app-primary-font: "Bergen Text";
+$app-primary-font-color: #e9fcff;
+
+@font-face {
+  font-family: "bergen_textbold";
+  src: url("bergentext-bold-webfont.woff2") format("woff2"),
+    url("bergentext-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bergen_textregular";
+  src: url("bergentext-regular-webfont.woff2") format("woff2"),
+    url("bergentext-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bergen_textsemi_bold";
+  src: url("bergentext-semibold-webfont.woff2") format("woff2"),
+    url("bergentext-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Media query */
+$app-mobile: 320px;
+$app-tablet: 768px;
+$app-desktop: 1024px;
+$app-desktop-medium: 1440px;
+$app-desktop-large: 1680px;
+
+/* Website Font Size */
+$app-heading-one: 2.5rem;
+$app-heading-two: 2rem;
+$app-heading-three: 1.5rem;
+$app-text-size: 1.125rem;
+$app-text-size-xl: 1.8rem;
+
+$app-heading-one-tablet: 3rem;
+$app-heading-two-tablet: 2.5rem;
+$app-heading-three-tablet: 2rem;
+
+$app-heading-one-desktop: 4rem;
+$app-heading-two-desktop: 3rem;
+$app-heading-three-desktop: 2rem;
+
+$app-heading-one-desktop-large: 6rem;
+$app-heading-two-desktop-large: 5rem;
+$app-heading-three-desktop-large: 4rem;
+
+/* Website Color */
+$app-corporate-color: #22d3ee;
+$app-supporting-color: #f39c12;
+$app-supporting-color-2: #2ecc71;
+$app-supporting-color-3: #06544d;
+$app-button-font-color: #39445c;
+
+/* Website Background */
+$app-bg: #051e2e;
+$app-univer-1: url("./src/assets/images/forest-bg.jpeg");
+$app-univer-2: url("./src/assets/images/fruits-bg.jpeg");
+$app-univer-3: url("./src/assets/images/animals-bg.jpeg");
+
+@mixin background-property {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+/* Website Buttons */
+$app-button-bg: $app-corporate-color;
+$app-button-outline-bg: transparent;
+$app-button-txt: $app-button-font-color;
+$app-button-outline-txt: $app-corporate-color;
+$app-button-height: 3rem;
+$app-button-width: 19rem;
+$app-button-circle-height: 2rem;
+$app-button-circle-width: 2rem;
+$app-button-text-size: 1rem;
+$app-button-text-weight: bold;
+
+@mixin primary-button {
+  color: $app-button-font-color;
+  background-color: $app-button-bg;
+  border: $app-border;
+  border-radius: $app-border-radius;
+  height: $app-button-height;
+  width: $app-button-width;
+  transition: $app-transition;
+  font-size: $app-button-text-size;
+  font-weight: $app-button-text-weight;
+  cursor: $pointer;
+
+  &:hover {
+    color: $app-button-outline-txt;
+    background-color: $app-button-outline-bg;
+  }
+}
+
+@mixin secondary-button {
+  color: $app-button-outline-txt;
+  background-color: $app-button-outline-bg;
+  border: $app-border;
+  border-radius: $app-border-radius;
+  height: $app-button-height;
+  width: $app-button-width;
+  transition: $app-transition;
+  font-size: $app-button-text-size;
+  font-weight: $app-button-text-weight;
+  cursor: $pointer;
+
+  &:hover {
+    color: $app-button-font-color;
+    background-color: $app-button-bg;
+  }
+}
+
+@mixin circle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $app-button-font-color;
+  background-color: $app-button-bg;
+  border: $app-border;
+  border-radius: $app-border-radius;
+  // height: $app-button-circle-height;
+  // width: $app-button-circle-width;
+  transition: $app-transition;
+  font-size: $app-button-text-size;
+  font-weight: $app-button-text-weight;
+  cursor: $pointer;
+}
+
+/* Website Border */
+$app-border: 1px solid $app-corporate-color;
+$app-border-radius: 4rem;
+
+/* Transition */
+$app-transition: all 300ms ease-in-out;
+
+/* Cursor */
+$pointer: pointer;
+
+/* Box Shadow */
+$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

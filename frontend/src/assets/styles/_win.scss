@@ -1,0 +1,27 @@
+.win-container-status {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  h1 {
+    padding-top: 40px;
+    color: rgb(2, 255, 2);
+  }
+
+  p {
+    text-align: center;
+    margin: 10px;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  @media screen and (min-width: $app-tablet) {
+    img {
+      width: 240px;
+    }
+  }
+}

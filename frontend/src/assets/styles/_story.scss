@@ -1,0 +1,122 @@
+.storyDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $app-bg;
+  width: 100vw;
+  height: 100%;
+  margin-top: 2vh;
+
+  @media screen and (min-width: $app-desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .halfOneDiv{
+    .letterImg {
+      height: 55vh;
+      width: auto;
+      max-width: 1500px;
+      margin-top: 2vh;
+
+      @media screen and (min-width: $app-tablet) {
+        height: 58vh;
+      }
+
+      @media screen and (min-width: $app-desktop) {
+        height: 75vh;
+        padding-left: 5vw;
+        margin-top: 5vh;
+      }
+    }
+  }
+
+  .halfTwoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .bottleAndButtonDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      height: fit-content;
+
+      .bottleImg {
+        height: 15vh;
+        width: auto;
+        rotate: 40deg;
+        animation: floatAnimation 10s ease-out infinite;
+      }
+
+      .story-button {
+        width: 20vw;
+        height: 5vh;
+        margin-left: 15vw;
+
+        @media screen and (min-width: $app-tablet) {
+          margin-left: 8vw;
+          width: 10vw;
+        }
+
+        @media screen and (min-width: $app-desktop) {
+          margin-left: 6vw;
+          width: 7vw;
+        }
+
+        @media screen and (min-width: $app-desktop-medium) {
+          margin-left: 4vw;
+        }
+
+        @media screen and (min-width: $app-desktop-large) {
+          margin-left: 3vw;
+          width: 5vw;
+
+        }
+      }
+    }
+
+    .wavesImg {
+      width: 100vw;
+      height: auto;
+      max-width: 700px;
+
+      @media screen and (min-width: $app-tablet) {
+        width: 45vw;
+      }
+
+      @media screen and (min-width: $app-desktop) {
+        width: 43vw;
+      }
+
+      @media screen and (min-width: $app-desktop-medium) {
+        width: 35vw;
+      }
+
+      @media screen and (min-width: $app-desktop-large) {
+        width: 25vw;
+      }
+    }
+  }
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+

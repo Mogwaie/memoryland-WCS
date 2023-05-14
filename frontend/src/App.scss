@@ -1,0 +1,146 @@
+@import "./assets/styles/variables";
+@import "./assets/styles/story";
+@import "./assets/styles/lose";
+@import "./assets/styles/sound";
+@import "./assets/styles/error404";
+@import "./assets/styles/header";
+@import "./assets/styles/home";
+@import "./assets/styles/win";
+@import "./assets/styles/returnButton";
+@import "./assets/styles/map";
+@import "./assets/styles/SingleCard";
+@import "./assets/styles/game";
+@import "./assets/styles/univers";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $app-primary-font;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+  height: 100dvh;
+  font-family: $app-primary-font;
+  background-color: $app-bg;
+  font-size: $app-text-size;
+  color: $app-primary-font-color;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+}
+
+input,
+button,
+textarea,
+select {
+  font: $app-primary-font;
+  font-family: $app-primary-font;
+}
+
+a {
+  text-decoration: none;
+  color: $app-primary-font-color;
+  font-family: $app-primary-font;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: $app-primary-font;
+}
+
+h1 {
+  font-size: $app-heading-one;
+}
+
+h2 {
+  font-size: $app-heading-two;
+}
+
+h3 {
+  font-size: $app-heading-three;
+}
+
+@media screen and (min-width: $app-tablet) and (min-width: $app-desktop) {
+  h1 {
+    font-size: $app-heading-one-tablet;
+  }
+  h2 {
+    font-size: $app-heading-two-tablet;
+  }
+  h3 {
+    font-size: $app-heading-three-tablet;
+  }
+}
+
+@media screen and (min-width: $app-desktop) and (min-width: $app-desktop-medium) {
+  h1 {
+    font-size: $app-heading-one-desktop;
+  }
+  h2 {
+    font-size: $app-heading-two-desktop;
+  }
+  h3 {
+    font-size: $app-heading-three-desktop;
+  }
+}
+
+@media screen and (min-width: $app-desktop-large) {
+  h1 {
+    font-size: $app-heading-one-desktop-large;
+  }
+  h2 {
+    font-size: $app-heading-two-desktop-large;
+  }
+  h3 {
+    font-size: $app-heading-three-desktop-large;
+  }
+
+  p {
+    font-size: $app-text-size-xl;
+  }
+}
+
+.primary-button {
+  @include primary-button;
+}
+
+.secondary-button {
+  @include secondary-button;
+}
+
+.circle-button {
+  @include circle-button;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.logo {
+  max-width: 120px;
+}
